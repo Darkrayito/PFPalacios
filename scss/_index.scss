@@ -1,0 +1,132 @@
+/* MAIN INDEX*/
+
+#index section{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 2px;
+    background-color: $rojo-background;
+    border: 2px dotted $rojo-primario;
+    border-radius: 2%;
+}
+
+#tiposSec{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beneficios-list li{
+    margin: 0 20px;
+}
+
+.setTipos{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    .setTipos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 10%;
+    }
+
+    .setTipos>*{
+        flex: 1 1 0;
+    }
+}
+
+.setTipos{
+    margin: 2% 5%;
+}
+
+.setTipos h3{
+    padding: 15px;
+    background-image: radial-gradient($rojo-primario,$rojo-secundario,$rojo-background);
+    color: white;
+    border-radius: 50%;
+}
+
+.setTipos img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px dotted $rojo-primario;
+    background-color:$gris-secundario;
+    border-radius: 5%;
+}
+
+/*SET SIMPLE*/
+.setCard{
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "leftBox rightBox";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    column-gap: 2px;
+    justify-content: center;
+    align-content: center;
+    font-size: small;
+}    
+
+
+@media screen and (min-width: 536px) {
+    .setCard{
+        font-size: medium;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .setCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: medium;
+    }
+}
+
+.setCard h3{
+    grid-area: title;
+}
+.setCard img{
+    align-self: center;
+}
+
+/*SET SIMPLE Y SET FULL */
+#setSimple img, #setFull img{
+    grid-area: leftBox;
+}    
+#setSimple p, #setFull p{
+    grid-area: rightBox;
+}    
+
+/*SET DISEÑO*/
+
+#setDiseño img{
+    grid-area: rightBox ;
+}
+#setDiseño p{
+    grid-area: leftBox ;
+}
+
+.setCard p{
+    padding: 6%;
+    border: 2px groove $rojo-secundario;
+    font-style: italic;
+    background-image: radial-gradient($rojo-background 85%,$rojo-primario);
+    border-radius: 4%;
+}
+
+.aclaracion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 4px double $rojo-primario; 
+    
+}

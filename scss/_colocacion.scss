@@ -1,0 +1,31 @@
+/*MAIN COLOCACION*/
+#colocacion section{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 2px;
+    background-color: $rojo-background;
+    border: 2px dotted $rojo-primario;
+    border-radius: 2%;
+}
+
+#colocacion div{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#video-cont{
+    margin:0 auto;
+    display: block;
+    height: 100%;
+}
+
+#video-cont iframe{
+    height: 100%;
+}
+
+@media screen and (max-width:360px) {
+    #video-cont iframe{
+        width: 85%;
+        height: 100%;
+    }
+}

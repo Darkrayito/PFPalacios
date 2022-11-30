@@ -1,0 +1,22 @@
+/*MAIN TRABAJOS*/
+
+#trabajos section{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 2px;
+    background-color: $rojo-background;
+    border: 2px dotted $rojo-primario;
+    border-radius: 2%;
+}
+
+.carousel-inner{
+    background-image: radial-gradient($rojo-secundario 0%,$rojo-background );
+    border: 1px solid $rojo-background;
+    border-radius: 5%;
+}
+.carousel-inner>.carousel-item>img{
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    max-height: 630px;
+}
