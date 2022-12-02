@@ -9,3 +9,9 @@ $rojo-terciario:#ff7673;
 $rojo-background:#f88c8a;
 $negro-primario:#191919;
 $gris-secundario:#404040;
+
+/*Mixin*/
+@mixin sizes($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}

@@ -1,14 +1,4 @@
 /* MAIN INDEX*/
-
-#index section{
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    padding: 2px;
-    background-color: $rojo-background;
-    border: 2px dotted $rojo-primario;
-    border-radius: 2%;
-}
-
 #tiposSec{
     display:flex;
     flex-direction: column;
@@ -23,7 +13,26 @@
 .setTipos{
     display: flex;
     flex-direction: column;
+    margin: 2% 5%;
+
+    h3{
+        padding: 15px;
+        background-image: radial-gradient($rojo-primario,$rojo-secundario,$rojo-background);
+        background-size: auto;
+        color: white;
+        text-shadow: 3px 3px 2px $gris-secundario;
+        border-radius: 50%;
+    }
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        border: 5px dotted $rojo-primario;
+        background-color:$gris-secundario;
+        border-radius: 5%;
+    }
 }
+
 
 @media screen and (min-width: 768px){
     .setTipos{
@@ -39,25 +48,6 @@
     }
 }
 
-.setTipos{
-    margin: 2% 5%;
-}
-
-.setTipos h3{
-    padding: 15px;
-    background-image: radial-gradient($rojo-primario,$rojo-secundario,$rojo-background);
-    color: white;
-    border-radius: 50%;
-}
-
-.setTipos img{
-    max-width: 100%;
-    max-height: 100%;
-    border: 5px dotted $rojo-primario;
-    background-color:$gris-secundario;
-    border-radius: 5%;
-}
-
 /*SET SIMPLE*/
 .setCard{
     display: grid;
@@ -70,6 +60,22 @@
     justify-content: center;
     align-content: center;
     font-size: small;
+
+    p{
+        padding: 6%;
+        border: 2px groove $rojo-secundario;
+        font-style: italic;
+        background-image: radial-gradient($rojo-background 85%,$rojo-primario);
+        border-radius: 4%;
+    }
+
+    h3{
+        grid-area: title;
+    }
+
+    img{
+        align-self: center;
+    }
 }    
 
 
@@ -90,13 +96,6 @@
     }
 }
 
-.setCard h3{
-    grid-area: title;
-}
-.setCard img{
-    align-self: center;
-}
-
 /*SET SIMPLE Y SET FULL */
 #setSimple img, #setFull img{
     grid-area: leftBox;
@@ -112,14 +111,6 @@
 }
 #setDiseño p{
     grid-area: leftBox ;
-}
-
-.setCard p{
-    padding: 6%;
-    border: 2px groove $rojo-secundario;
-    font-style: italic;
-    background-image: radial-gradient($rojo-background 85%,$rojo-primario);
-    border-radius: 4%;
 }
 
 .aclaracion{

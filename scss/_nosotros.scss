@@ -1,0 +1,41 @@
+#nosotros-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+.img-wrapper{
+    padding: 2.5% 10%;
+}
+
+@media screen and (min-width:768px) {
+    #nosotros-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: larger;
+        line-height: 2rem ;
+    }
+
+    .img-wrapper{
+        padding: 0%;
+        align-self: center;
+        justify-self: center;
+    }
+
+}
+
+#iframe-wrapper{
+    @extend .iframewrap_ex;
+    background-color: gainsboro;
+    margin-bottom: 5%;
+
+    iframe{
+        position:absolute;
+        top: 5%;
+        left: 5%;   
+        @include sizes(90%,90%);
+    }
+}

@@ -73,6 +73,11 @@ footer{
     background-image: url("../img/bground.jpg");
     background-size: cover;
     text-shadow: 5px 5px 5px $gris-secundario;
+    
+    img{
+        max-width: 100%;
+        padding: 4px;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -87,16 +92,9 @@ footer{
     }
 } 
 
-
-.titulo img{
-    max-width: 100%;
-    padding: 4px;
-}
-
 @media screen and (min-width: 576px) {
     .titulo img{
-        width: 15rem;
-        height: 15rem;
+        @include sizes(15rem,15rem);
         padding: 10px;
     }
 }
@@ -126,19 +124,59 @@ footer{
 }
 
 .list-wrapper{
-    width: 100%;
-    height: 100%;
+    @include sizes(100%,100%);
 }
 
 .nav-list{
-    width: 100%;
-    height: 100%;
+    @include sizes(100%,100%);
     padding-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
     font-family: 'Nunito', sans-serif;
+
+    li{
+        height: 100%;
+        display: flex;
+        justify-content:flex-start;
+        text-align: center;
+        margin-top: 1px;
+        border: 2px solid black;
+        border-right: none;
+        border-left: none;
+
+        a{
+            width: 100%;
+            padding-left: 10%;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: medium;
+            letter-spacing: 0.1rem;
+            font-weight: bold;
+            color: $rojo-primario;
+            background-image: url("../img/bground.jpg");
+            text-shadow: 2px 2px 5px $rojo-terciario;
+        }
+    }
+
+    & a:active{
+        transition: all;
+        background-image: url("../img/bg-hover.jpg");
+        color: $rojo-secundario;
+        text-shadow: 1px 1px 10px white;
+    }
+
+    & li:first-of-type{
+        margin:0;
+        border-top: none;
+    }
+
+    & li:last-of-type{
+        border-bottom: none;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -150,24 +188,6 @@ footer{
     }
 }
 
-.nav-list li{
-    height: 100%;
-    display: flex;
-    justify-content:flex-start;
-    text-align: center;
-    margin-top: 1px;
-    border: 2px solid black;
-    border-right: none;
-    border-left: none;
-}
-.nav-list li:first-of-type{
-    border-top: none;
-}
-
-.nav-list li:last-of-type{
-    border-bottom: none;
-}
-
 @media screen and (min-width: 576px) {
     .nav-list li{
         width: auto;
@@ -177,26 +197,6 @@ footer{
         border: none;
         margin: 0;
     }
-}
-
-.nav-list li>a{
-    width: 100%;
-    padding-left: 10%;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: medium;
-    letter-spacing: 0.1rem;
-    font-weight: bold;
-    color: $rojo-primario;
-    background-image: url("../img/bground.jpg");
-}
-
-.nav-list a:active{
-    transition: all 0.5s;
-    background-color: $negro-primario;
-    color: $rojo-secundario;
 }
 
 @media screen and (min-width: 576px) {
@@ -245,7 +245,7 @@ a{
     color:#ffffff;
 }
 
-h2,h3{
+.titulos_ex{
     text-align: center;
     font-size: 45px;
     margin: 25px auto;
@@ -255,16 +255,16 @@ h2,h3{
 }
 
 h2{
+    @extend .titulos_ex;
     text-shadow: 2px 2px 2px $rojo-primario;
 }
 
 h3{
+    @extend .titulos_ex;
     font-size: 35px;
-    color:$rojo-background;
-    background-image: url("../img/effect.png");
-    background-position-x: center;
-    background-position-y: center;
-    text-shadow: 2px 2px 1px $negro-primario;
+    color:white;
+    text-shadow: 1px 1px 2px $rojo-primario;
+    background-image:linear-gradient(to right , $rojo-background, $rojo-terciario, $rojo-background);
     padding: 2%;
 }
 
@@ -286,29 +286,41 @@ footer{
     background-color: black;
     color:white;
     padding-bottom: 10px;
-}
 
-footer h2{
-    color: white;
-    text-shadow: 3px 5px 5px $rojo-primario;
-}
+    h2{
+        color: white;
+        text-shadow: 3px 5px 5px $rojo-primario;
+    }
 
-footer img {
-    width: 10%;
-    height: 10%;
+    img {
+        @include sizes(12%,12%);
+    }
+
+    div{
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width: 768px){
     footer img{
-        width: 7%;
-        height: 7%;
+        @include sizes(7%,7%);
     }
-}
-
-footer div{
-    text-align: center;
 }
 
 .sociales span{
     display: block;
+}
+
+.iframewrap_ex{
+    position: relative;
+    padding-bottom: 50%;
+    height: 0 ;
+    overflow: hidden;
+}
+
+.hand-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
