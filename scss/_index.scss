@@ -65,7 +65,8 @@
         padding: 6%;
         border: 2px groove $rojo-secundario;
         font-style: italic;
-        background-image: radial-gradient($rojo-background 85%,$rojo-primario);
+        text-shadow: 1px 1px 4px $gris-secundario;
+        background-image: radial-gradient(white 85%,$rojo-primario);
         border-radius: 4%;
     }
 

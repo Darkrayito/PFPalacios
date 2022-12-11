@@ -365,7 +365,8 @@ footer div {
   padding: 6%;
   border: 2px groove #ff3936;
   font-style: italic;
-  background-image: radial-gradient(#f88c8a 85%, #ff0400);
+  text-shadow: 1px 1px 4px #404040;
+  background-image: radial-gradient(white 85%, #ff0400);
   border-radius: 4%;
 }
 .setCard h3 {
@@ -421,6 +422,10 @@ footer div {
 }
 
 #video-cont iframe {
+  border: 4px dotted #ff0400;
+  border-radius: 2.5%;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 20%;
   position: absolute;
   top: 2.5%;
   left: 2.5%;
@@ -435,7 +440,7 @@ footer div {
 }
 /*MAIN TRABAJOS*/
 .carousel-inner {
-  background-image: radial-gradient(#ff3936 0%, #f88c8a);
+  background-image: radial-gradient(#ff3936 1%, #f88c8a);
   border: 1px solid #f88c8a;
   border-radius: 5%;
 }
@@ -455,7 +460,12 @@ footer div {
 }
 
 .img-wrapper {
-  padding: 2.5% 10%;
+  background-image: radial-gradient(#ff0400, white);
+  border-radius: 50%;
+  padding: 2% 10%;
+}
+.img-wrapper img {
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 768px) {
@@ -468,7 +478,7 @@ footer div {
     line-height: 2rem;
   }
   .img-wrapper {
-    padding: 0%;
+    padding: 1.5%;
     align-self: center;
     justify-self: center;
   }
@@ -476,6 +486,7 @@ footer div {
 #iframe-wrapper {
   background-color: gainsboro;
   margin-bottom: 5%;
+  border: 10px dashed #404040;
 }
 #iframe-wrapper iframe {
   position: absolute;
