@@ -40,24 +40,28 @@
         <section>
             <h2>Contacto</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus fugit dignissimos odio dolorum velit, possimus nemo soluta mollitia neque sapiente atque fuga iste? Consequatur veritatis eius commodi repudiandae exercitationem.</p>
-            <fieldset>
+            <fieldset class="d-flex flex-column">
                 <form action="">
-                    <div id="personal-data">
-                        <div id="name-row">
+                    <div id="personal-data" class="row justify-content-center align-content-center">
+                        <div id="name-row" class="col-6 col-sm-4 mb-3">
                             <label for="name">Nombre</label>
                             <input type="text" name="" id="name">
                         </div>
-                        <div id="lastname-row">
+                        <div id="lastname-row" class="col-6 col-sm-4  mb-3">
                             <label for="lastname">Apellido</label>
                             <input type="text" name="" id="lastname">
-                            </div>
-                        <div id="quant-row">
+                        </div>
+                        <div id="phone-row" class="col-12 col-sm-4  mb-3">
+                            <label for="phone">Celular</label>
+                            <input id="phone" type="tel">
+                        </div>
+                        <div id="quant-row" class="col-4 col-sm-3 ">
                             <label for="set">Cantidad de sets</label>
                             <input type="number" name="quant-sets" id="set">
                         </div>
-                        <div>
+                        <div id="deliver-row" class="col-8 col-sm-3 ">
                             <label for="">Entrega</label>
-                            <div>
+                            <div class="d-flex flex-row">
                                 <label for="retiro">Retiro</label>
                                 <input type="radio" name="deliver" id="retiro">
                                 <label for="envio">Envío</label>
@@ -65,8 +69,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="hand-data">
-                        <div id="mano-izquierda">
+                    <div id="hand-data" class="col-12">
+                        <div id="mano-izquierda" class="col-6">
                             <img src="../img/Manoizq.png" alt="Mano izquierda">
                             <div class="medida-uña">
                                 <label for="">Pulgar</label>
@@ -89,10 +93,10 @@
                                 <input type="number" name="" id="">
                             </div>
                         </div>
-                        <div id="medicion">
+                        <div id="medicion" class="col-12">
                             <img src="../img/MedicionUñas.png" alt="Como medir las uñas">
                         </div>
-                        <div id="mano-derecha">
+                        <div id="mano-derecha" class="col-6">
                             <img src="../img/Manoder.png" alt="Mano derecha">
                             <div class="medida-uña">
                                 <label for="">Pulgar</label>

@@ -1,129 +1,28 @@
-form{
-    display:flex;
-    flex-direction: column;
-}
+/*MAIN CONTACTO*/
 
 #personal-data{
     border: 4px double $gris-secundario;
     margin: 1.5% 0.5%;
     padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    column-gap: 2%;
-}
 
-
-@media screen and (min-width:768px) {
-    #personal-data{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        column-gap: 2%;
+    input{
+        width: 100% ;
     }
 }
+
+// @media screen and (min-width:768px) {
+//     #personal-data{
+//     }
+// }
 
 #hand-data{
     border: 4px double $gris-secundario;
     margin: 1.5% 0.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: small;
-
-    *{
-        flex: 1 1 0;
-    }
-}
-
-@media screen and (min-width:768px) {
-
-    #hand-data{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: medium;
-
-        *{
-            flex: 1 1 0;
-        }
-    }
-}
-
-#mano-izquierda{
-    @extend .hand-boxes;
-    align-items: flex-start;
-    order:2;
-    .medida-uña{
-        margin:5% 0;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-
-}
-
-@media screen and (min-width:768px) {
-    #mano-izquierda{
-        order:1;
-        .medida-uña{
-            margin:5% 0;
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-around;
-        }
-
-    }
-}
-
-#medicion{
-    order:1;
-}
-
-@media screen and (min-width:768px) {
-    #medicion{
-        order:2
-    }
-}
-
-#mano-derecha{
-    @extend .hand-boxes;
-    align-items: flex-start;
-    order:2;
-
-    .medida-uña{
-        margin:5% 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-}
-
-@media screen and (min-width:768px) {
-
-    #mano-derecha{
-        align-items: flex-end;
-        order:3;
-
-        .medida-uña{
-            margin:5% 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
 }
 
 
 #design{
     border: 4px double $gris-secundario;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 1.5% 0.5%;
 }
