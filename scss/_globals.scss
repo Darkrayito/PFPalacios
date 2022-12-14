@@ -37,6 +37,7 @@ header{
         grid-area: header;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -325,4 +326,10 @@ footer{
     margin: 1.5% 2%;
     padding: 1%;
     background-color: $rojo-terciario;
+}
+
+.text-input-ellipse{
+    border-radius:25px;
+    padding-left: 6px;
+    border: 1px dashed $rojo-secundario;
 }

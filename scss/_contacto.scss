@@ -1,10 +1,27 @@
 /*MAIN CONTACTO*/
 /*First box*/
+img{
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    label{
+        font-size: small;
+    }
+}
+
+@media screen and (min-width:576px) {
+    label{
+        font-size: medium;
+    }
+}
+
 #personal-data{
     @extend .contact-boxes;
 
     input{
-        width: 100% ;
+        width: 100%;
+        @extend .text-input-ellipse;
     }
 }
 
@@ -12,6 +29,7 @@ label:not(.option){
     font-family: $fuente-form;
     text-shadow:1px 1px 3px white;
 }
+
     
 #quant-row{
     input{
@@ -32,7 +50,33 @@ label:not(.option){
 #hand-data{
     @extend .contact-boxes;
     font-size: small;
+
+    input{
+        width: 50%;
+        @extend .text-input-ellipse;
+    }
+
+    p{
+        font-weight: bolder;
+        font-size: medium;
+    }
 }
+
+.hand-img{
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px white ;
+    background-color: gainsboro;
+    margin:10px 5px;
+}
+
+#medicion{
+    img{
+        height: 95vh;
+        border-radius: 15px;
+    }
+}
+
+
 
 /*Third box*/
 #design{

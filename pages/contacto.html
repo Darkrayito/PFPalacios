@@ -40,8 +40,8 @@
         <section>
             <h2>Contacto</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus fugit dignissimos odio dolorum velit, possimus nemo soluta mollitia neque sapiente atque fuga iste? Consequatur veritatis eius commodi repudiandae exercitationem.</p>
-            <fieldset class="d-flex flex-column">
-                <form action="" class="col-12">
+            <fieldset>
+                <form action="" class="d-flex flex-column">
                     <div id="personal-data" class="row justify-content-center align-content-center">
                         <div id="name-row" class="d-flex flex-column col-6 col-sm-4 mb-3">
                             <label for="name">Nombre</label>
@@ -71,59 +71,70 @@
                     </div>
 
                     <div id="hand-data" class="row">
-                        <div id="mano-izquierda" class="col-6">
-                            <img src="../img/Manoizq.png" alt="Mano izquierda">
-                            <div class="medida-uña">
-                                <label for="">Pulgar</label>
-                                <input type="number" name="" id="">
+                        <div class="d-flex flex-row flex-wrap">
+                            <div id="mano-izquierda" class="col-6 col-lg-3 order-1 order-lg-0">
+                                <div >
+                                    <img src="../img/Manoizq.png" alt="Mano izquierda" class="hand-img p-1 ">
+                                    <div class="d-flex flex-row justify-content-between align-content-center m-1">
+                                        <label for="">Pulgar</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-content-center m-1">
+                                        <label for="">Índice</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-content-center m-1">
+                                        <label for="">Medio</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-content-center m-1">
+                                        <label for="">Anular</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-content-center m-1">
+                                        <label for="">Meñique</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="medida-uña">
-                                <label for="">Índice</label>
-                                <input type="number" name="" id="">
+                            <div id="medicion" class="col-12 col-lg-6 order-0 order-lg-1 p-2">
+                                <div>    
+                                    <img src="../img/MedicionUñas.png" alt="Como medir las uñas" class="">
+                                </div>
                             </div>
-                            <div class="medida-uña">
-                                <label for="">Medio</label>
-                                <input type="number" name="" id="">
+                            <div id="mano-derecha" class="col-6 col-lg-3 order-1 order-lg-3">
+                                <div>    
+                                    <img src="../img/Manoder.png" alt="Mano derecha" class="hand-img p-1 ">
+                                    <div class="d-flex flex-row-reverse justify-content-between align-content-center m-1">
+                                        <label for="">Pulgar</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                    <div class="d-flex flex-row-reverse justify-content-between align-content-center m-1">
+                                        <label for="">Índice</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                    <div class="d-flex flex-row-reverse justify-content-between align-content-center m-1">
+                                        <label for="">Medio</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                    <div class="d-flex flex-row-reverse justify-content-between align-content-center m-1">
+                                        <label for="">Anular</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                    <div class="d-flex flex-row-reverse justify-content-between align-content-center m-1">
+                                        <label for="">Meñique</label>
+                                        <input type="number" min="0" name="" id="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="medida-uña">
-                                <label for="">Anular</label>
-                                <input type="number" name="" id="">
-                            </div>
-                            <div class="medida-uña">
-                                <label for="">Meñique</label>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
-                        <div id="medicion" class="col-12">
-                            <img src="../img/MedicionUñas.png" alt="Como medir las uñas">
-                        </div>
-                        <div id="mano-derecha" class="col-6">
-                            <img src="../img/Manoder.png" alt="Mano derecha">
-                            <div class="medida-uña">
-                                <label for="">Pulgar</label>
-                                <input type="number" name="" id="">
-                            </div>
-                            <div class="medida-uña">
-                                <label for="">Índice</label>
-                                <input type="number" name="" id="">
-                            </div>
-                            <div class="medida-uña">
-                                <label for="">Medio</label>
-                                <input type="number" name="" id="">
-                            </div>
-                            <div class="medida-uña">
-                                <label for="">Anular</label>
-                                <input type="number" name="" id="">
-                            </div>
-                            <div class="medida-uña">
-                                <label for="">Meñique</label>
-                                <input type="number" name="" id="">
+                            <div class="col-12 order-4">
+                                <p>*Todas las medidas debe estar en milimetros [mm]</p>
                             </div>
                         </div>
                     </div>
 
                     <div id="design" class="d-flex flex-column">
-                        <div class="row justify-content-center">    
+                        <div class="row justify-content-center align-content-center">    
                             <label for="" class="col-6">Estilo/Diseño</label>
                             <select name="" id="" class="col-5">
                                 <option value="Simple">Simple</option>
@@ -131,10 +142,13 @@
                                 <option value="Full">Full</option>
                             </select>
                             <textarea placeholder="Por favor, describa en detalle la personalización de su set..." 
-                            id="" cols="" rows="4" class="col-11"></textarea>
+                            id="" cols="" rows="4" class="col-11 my-2"></textarea>
                         </div>
-
-                </form>
+                    </div>
+                    </form>
+                    <div id="Enviar" class="d-flex justify-content-center align-items-start">
+                        <button type="button" class="btn btn-danger">Enviar</button>
+                    </div>
             </fieldset>
         </section>
     </main>

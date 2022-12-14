@@ -39,6 +39,7 @@ header {
     grid-area: header;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 }
 main {
@@ -308,6 +309,12 @@ footer div {
   background-color: #ff7673;
 }
 
+.text-input-ellipse, #hand-data input, #personal-data input {
+  border-radius: 25px;
+  padding-left: 6px;
+  border: 1px dashed #ff3936;
+}
+
 /* MAIN INDEX*/
 #tiposSec {
   display: flex;
@@ -522,6 +529,20 @@ footer div {
 
 /*MAIN CONTACTO*/
 /*First box*/
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  label {
+    font-size: small;
+  }
+}
+@media screen and (min-width: 576px) {
+  label {
+    font-size: medium;
+  }
+}
 #personal-data input {
   width: 100%;
 }
@@ -545,6 +566,25 @@ label:not(.option) {
 /*Second Box*/
 #hand-data {
   font-size: small;
+}
+#hand-data input {
+  width: 50%;
+}
+#hand-data p {
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.hand-img {
+  border-radius: 100px;
+  box-shadow: 0px 0px 5px white;
+  background-color: gainsboro;
+  margin: 10px 5px;
+}
+
+#medicion img {
+  height: 95vh;
+  border-radius: 15px;
 }
 
 /*Third box*/
