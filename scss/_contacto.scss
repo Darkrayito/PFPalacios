@@ -1,28 +1,40 @@
 /*MAIN CONTACTO*/
-
+/*First box*/
 #personal-data{
-    border: 4px double $gris-secundario;
-    margin: 1.5% 0.5%;
-    padding: 2%;
+    @extend .contact-boxes;
 
     input{
         width: 100% ;
     }
 }
 
-// @media screen and (min-width:768px) {
-//     #personal-data{
-//     }
-// }
+label:not(.option){   
+    font-family: $fuente-form;
+    text-shadow:1px 1px 3px white;
+}
+    
+#quant-row{
+    input{
+        width:50px;
+    }
+}
 
+#deliver-row{
+    input{
+        width: 75px;
+        margin: 5px 0;
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+}
+
+/*Second Box*/
 #hand-data{
-    border: 4px double $gris-secundario;
-    margin: 1.5% 0.5%;
+    @extend .contact-boxes;
     font-size: small;
 }
 
-
+/*Third box*/
 #design{
-    border: 4px double $gris-secundario;
-    margin: 1.5% 0.5%;
+    @extend .contact-boxes;
 }

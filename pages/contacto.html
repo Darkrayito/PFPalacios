@@ -41,35 +41,36 @@
             <h2>Contacto</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus fugit dignissimos odio dolorum velit, possimus nemo soluta mollitia neque sapiente atque fuga iste? Consequatur veritatis eius commodi repudiandae exercitationem.</p>
             <fieldset class="d-flex flex-column">
-                <form action="">
+                <form action="" class="col-12">
                     <div id="personal-data" class="row justify-content-center align-content-center">
-                        <div id="name-row" class="col-6 col-sm-4 mb-3">
+                        <div id="name-row" class="d-flex flex-column col-6 col-sm-4 mb-3">
                             <label for="name">Nombre</label>
                             <input type="text" name="" id="name">
                         </div>
-                        <div id="lastname-row" class="col-6 col-sm-4  mb-3">
+                        <div id="lastname-row" class="d-flex flex-column col-6 col-sm-4 mb-3">
                             <label for="lastname">Apellido</label>
                             <input type="text" name="" id="lastname">
                         </div>
-                        <div id="phone-row" class="col-12 col-sm-4  mb-3">
+                        <div id="phone-row" class="d-flex flex-column col-12 col-sm-4 mb-3">
                             <label for="phone">Celular</label>
                             <input id="phone" type="tel">
                         </div>
-                        <div id="quant-row" class="col-4 col-sm-3 ">
+                        <div id="quant-row" class="d-flex flex-column col-4 col-sm-3 ">
                             <label for="set">Cantidad de sets</label>
-                            <input type="number" name="quant-sets" id="set">
+                            <input type="number" min="0" name="quant-sets" id="set">
                         </div>
                         <div id="deliver-row" class="col-8 col-sm-3 ">
-                            <label for="">Entrega</label>
+                            <label for="envio">Entrega</label>
                             <div class="d-flex flex-row">
-                                <label for="retiro">Retiro</label>
+                                <label for="retiro" class="option">Retiro</label>
                                 <input type="radio" name="deliver" id="retiro">
-                                <label for="envio">Envío</label>
+                                <label for="envio" class="option">Envío</label>
                                 <input type="radio" name="deliver" id="envio">
                             </div>
                         </div>
                     </div>
-                    <div id="hand-data" class="col-12">
+
+                    <div id="hand-data" class="row">
                         <div id="mano-izquierda" class="col-6">
                             <img src="../img/Manoizq.png" alt="Mano izquierda">
                             <div class="medida-uña">
@@ -119,13 +120,20 @@
                                 <input type="number" name="" id="">
                             </div>
                         </div>
+                    </div>
 
-                    </div>
-                    <div id="design">
-                        <label for="">Estilo/Diseño</label>
-                        <select name="" id=""></select>
-                        <textarea name="" id="" cols="100" rows="10"></textarea>
-                    </div>
+                    <div id="design" class="d-flex flex-column">
+                        <div class="row justify-content-center">    
+                            <label for="" class="col-6">Estilo/Diseño</label>
+                            <select name="" id="" class="col-5">
+                                <option value="Simple">Simple</option>
+                                <option value="Diseño">Diseño</option>
+                                <option value="Full">Full</option>
+                            </select>
+                            <textarea placeholder="Por favor, describa en detalle la personalización de su set..." 
+                            id="" cols="" rows="4" class="col-11"></textarea>
+                        </div>
+
                 </form>
             </fieldset>
         </section>

@@ -318,3 +318,11 @@ footer{
     height: 0 ;
     overflow: hidden;
 }
+
+.contact-boxes{
+    border: 1px solid $rojo-primario;
+    box-shadow: 0px 0px 6px $rojo-primario;
+    margin: 1.5% 2%;
+    padding: 1%;
+    background-color: $rojo-terciario;
+}
