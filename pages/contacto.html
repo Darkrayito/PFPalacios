@@ -39,21 +39,21 @@
     <main class="container-fluid">
         <section>
             <h2>Contacto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus fugit dignissimos odio dolorum velit, possimus nemo soluta mollitia neque sapiente atque fuga iste? Consequatur veritatis eius commodi repudiandae exercitationem.</p>
+            <p>Si estás interesada en obtener tus <b>Press On</b> te solicitamos que completes el siguiente formulario con los datos indicados. Nos contactaremos a la brevedad con el precio final, los métodos de pago y el tiempo estimado de confección tus uñitas. </p>
             <fieldset>
                 <form action="" class="d-flex flex-column">
                     <div id="personal-data" class="row justify-content-center align-content-center">
                         <div id="name-row" class="d-flex flex-column col-6 col-sm-4 mb-3">
                             <label for="name">Nombre</label>
-                            <input type="text" name="" id="name">
+                            <input type="text" name="" id="name" required>
                         </div>
                         <div id="lastname-row" class="d-flex flex-column col-6 col-sm-4 mb-3">
                             <label for="lastname">Apellido</label>
-                            <input type="text" name="" id="lastname">
+                            <input type="text" name="" id="lastname" required>
                         </div>
                         <div id="phone-row" class="d-flex flex-column col-12 col-sm-4 mb-3">
                             <label for="phone">Celular</label>
-                            <input id="phone" type="tel">
+                            <input id="phone" type="tel" pattern="[0-9]{10}" required>
                         </div>
                         <div id="quant-row" class="d-flex flex-column col-4 col-sm-3 ">
                             <label for="set">Cantidad de sets</label>
@@ -147,7 +147,7 @@
                     </div>
                     </form>
                     <div id="Enviar" class="d-flex justify-content-center align-items-start">
-                        <button type="button" class="btn btn-danger">Enviar</button>
+                        <button type="submit" class="btn btn-danger">Enviar</button>
                     </div>
             </fieldset>
         </section>

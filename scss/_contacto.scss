@@ -44,6 +44,11 @@ label:not(.option){
         -webkit-transform: scale(1.25);
         transform: scale(1.25);
     }
+
+    .option{
+        text-shadow: 1px 1px 1px $negro-primario;
+        color: white;
+    }
 }
 
 /*Second Box*/
@@ -59,6 +64,13 @@ label:not(.option){
     p{
         font-weight: bolder;
         font-size: medium;
+    }
+
+    label{
+        background-color: $rojo-background;
+        border: 1px solid $rojo-primario;
+        padding: 5px;
+        border-radius: 25px;
     }
 }
 
@@ -97,11 +109,11 @@ label:not(.option){
 }
 
 #estilo{
-        @extend .input-ellipse;
-        -webkit-border-radius: 15px;
-        border-radius: 15px;
+    @extend .input-ellipse;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
 }
 
 #DiseñoSet{
-  @extend .input-ellipse;
+    @extend .input-ellipse;
 }

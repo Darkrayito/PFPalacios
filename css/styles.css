@@ -53,13 +53,14 @@ footer {
 /* HEADER*/
 .cabecera {
   width: 99.1vw;
-  border: 6px solid black;
+  border: 4px solid #191919;
 }
 
 @media screen and (min-width: 576px) {
   .cabecera {
-    width: 99.1vw;
+    width: 98.5vw;
     border: none;
+    margin-left: 0.3%;
   }
 }
 .titulo {
@@ -103,14 +104,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  border: 5px solid black;
+  border: 3px solid #191919;
   border-right: none;
 }
 
 @media screen and (min-width: 576px) {
   .titulo-principal {
     border-bottom: 0;
-    border: 6px solid black;
+    border: 4px solid #191919;
   }
 }
 /*Lista*/
@@ -141,7 +142,7 @@ footer {
   justify-content: flex-start;
   text-align: center;
   margin-top: 1px;
-  border: 2px solid black;
+  border: 1px solid #191919;
   border-right: none;
   border-left: none;
 }
@@ -198,7 +199,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 6px solid black;
+    border: 4px solid black;
     border-top: none;
     letter-spacing: normal;
     font-size: medium;
@@ -456,15 +457,16 @@ footer div {
 }
 /*MAIN TRABAJOS*/
 .carousel-inner {
-  background-image: radial-gradient(#ff3936 1%, #f88c8a);
+  background-image: radial-gradient(#ff7673 5%, #f88c8a);
   border: 1px solid #f88c8a;
   border-radius: 5%;
 }
 .carousel-inner img {
   width: 50%;
   margin: 0 auto;
-  max-height: 450px;
+  max-height: 455px;
   border-radius: 15px;
+  border: 1px solid #ff0400;
   box-shadow: 0px 1px 20px #ff3936;
 }
 
@@ -476,7 +478,8 @@ footer div {
 
 #Diseños img {
   border-radius: 15px;
-  box-shadow: 1px 7px 10px white;
+  border: 2px solid white;
+  box-shadow: 1px 2px 15px white;
 }
 
 /*MAIN NOSOTROS*/
@@ -567,6 +570,10 @@ label:not(.option) {
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
 }
+#deliver-row .option {
+  text-shadow: 1px 1px 1px #191919;
+  color: white;
+}
 
 /*Second Box*/
 #hand-data {
@@ -578,6 +585,12 @@ label:not(.option) {
 #hand-data p {
   font-weight: bolder;
   font-size: medium;
+}
+#hand-data label {
+  background-color: #f88c8a;
+  border: 1px solid #ff0400;
+  padding: 5px;
+  border-radius: 25px;
 }
 
 .hand-img {
