@@ -21,7 +21,7 @@ img{
 
     input{
         width: 100%;
-        @extend .text-input-ellipse;
+        @extend .input-ellipse;
     }
 }
 
@@ -53,7 +53,7 @@ label:not(.option){
 
     input{
         width: 50%;
-        @extend .text-input-ellipse;
+        @extend .input-ellipse;
     }
 
     p{
@@ -66,19 +66,42 @@ label:not(.option){
     border-radius: 100px;
     box-shadow: 0px 0px 5px white ;
     background-color: gainsboro;
-    margin:10px 5px;
+    margin:10px 0;
 }
 
-#medicion{
-    img{
-        height: 95vh;
-        border-radius: 15px;
+@media screen and (max-width:576px) {
+    #medicion{
+        img{
+            height: 100vh;
+            width: 90vw;
+            border-radius: 25px;
+            box-shadow: 0px 0px 5px white
+        }
     }
 }
 
-
+@media screen and (min-width:576px) {
+    #medicion{
+        img{
+            height: 93vh;
+            width: 90vw;
+            border-radius: 50px;
+        }
+    }
+    
+}
 
 /*Third box*/
 #design{
     @extend .contact-boxes;
+}
+
+#estilo{
+        @extend .input-ellipse;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+}
+
+#DiseñoSet{
+  @extend .input-ellipse;
 }
