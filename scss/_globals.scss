@@ -52,7 +52,7 @@ footer{
 /* HEADER*/
 .cabecera{
     width: 99.1vw;
-    border: 4px solid $negro-primario;
+    border: 5px solid $negro-primario;
 }
 
 @media screen and (min-width: 576px) {
@@ -106,7 +106,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    border: 3px solid $negro-primario;
+    border: 5px solid $negro-primario;
     border-right: none;
 }
 
